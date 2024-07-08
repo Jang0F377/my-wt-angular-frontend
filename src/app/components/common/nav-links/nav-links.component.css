@@ -1,0 +1,8 @@
+.outer-div {
+  @apply flex flex-row text-lg text-white lg:gap-x-14;
+}
+
+.nav-link-anchor {
+  @apply relative -mx-3 -my-2 rounded-lg border-2 border-transparent px-3 py-2 text-xl transition-colors delay-150;
+  @apply hover:border-red-800 hover:bg-white hover:text-red-700;
+}

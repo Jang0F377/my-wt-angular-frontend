@@ -1,0 +1,32 @@
+header {
+  @apply bg-red-600 py-4;
+}
+
+.outer-div {
+  @apply mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8;
+}
+
+.logo-div {
+  @apply flex xs:mx-auto lg:mx-0 lg:gap-x-12;
+}
+
+.logo {
+  @apply w-[8.5rem] py-1 lg:w-32;
+}
+
+.nav-link-div {
+  @apply hidden text-lg text-white lg:flex lg:flex-row lg:gap-x-14;
+}
+
+.login-btn-div {
+  @apply hidden lg:flex;
+}
+
+.login-btn {
+  @apply inline-block rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-red-500 hover:border-red-900 hover:text-red-800;
+}
+
+.mobile-nav-link-div {
+  @apply flex rounded border border-transparent hover:border-black;
+  @apply lg:hidden;
+}
