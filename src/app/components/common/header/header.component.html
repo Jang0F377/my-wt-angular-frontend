@@ -18,21 +18,31 @@
     <div class="login-btn-div">
       <button type="button" class="login-btn">Login / Register</button>
     </div>
-    <div class="mobile-nav-link-div">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-7"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-        />
-      </svg>
+    <div class="mobile-nav-link-div" (click)="handleMobileNavMenu()">
+      <div
+        [class]="{
+          'hamburger-div-line': true,
+          'is-open': mobileNavOpen,
+          'is-closed': !mobileNavOpen,
+        }"
+      ></div>
+      <div
+        [class]="{
+          'hamburger-div-line': true,
+          'opacity-0': mobileNavOpen,
+          'opacity-50 group-hover:opacity-100': !mobileNavOpen,
+        }"
+      ></div>
+      <div
+        [class]="{
+          'hamburger-div-line': true,
+          'is-open-bottom': mobileNavOpen,
+          'is-closed-bottom': !mobileNavOpen,
+        }"
+      ></div>
+      @if (mobileNavOpen) {
+        <header-mobile-nav-links />
+      }
     </div>
   </div>
 </header>

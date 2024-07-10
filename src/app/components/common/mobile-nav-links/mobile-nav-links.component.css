@@ -1,0 +1,8 @@
+.outer-div {
+  @apply top-full z-50 mt-4 flex origin-top flex-col rounded-2xl bg-blue-100 p-4 text-lg tracking-tight text-blue-900 shadow-xl ring-1 ring-blue-800;
+}
+
+.mobile-nav-link-anchor {
+  @apply block w-full rounded-lg p-2;
+  @apply hover:bg-blue-400 hover:text-blue-50 hover:ring-blue-800;
+}

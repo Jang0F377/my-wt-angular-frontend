@@ -27,6 +27,25 @@ header {
 }
 
 .mobile-nav-link-div {
-  @apply flex rounded border border-transparent hover:border-black;
-  @apply lg:hidden;
+  @apply flex h-11 w-11 flex-col items-center justify-center rounded border border-black hover:border-2 lg:hidden;
+}
+
+.hamburger-div-line {
+  @apply my-1 h-1 w-6 transform rounded-full bg-black transition duration-300;
+}
+
+.is-open {
+  @apply translate-y-3 rotate-45;
+}
+
+.is-closed {
+  @apply opacity-100;
+}
+
+.is-open-bottom {
+  @apply -translate-y-3 -rotate-45;
+}
+
+.is-closed-bottom {
+  @apply opacity-100;
 }

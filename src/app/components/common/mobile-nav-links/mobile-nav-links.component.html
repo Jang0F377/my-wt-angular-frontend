@@ -1,0 +1,9 @@
+<div class="outer-div">
+  @for (linkArr of navRoutes; track $index) {
+    <a class="mobile-nav-link-anchor" href="{{ linkArr[1] }}">
+      <span>
+        {{ linkArr[0] }}
+      </span>
+    </a>
+  }
+</div>
